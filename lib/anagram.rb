@@ -6,11 +6,13 @@ class Anagram
   def initialize(words)
     @words = words
   end
+  
   def match(toMatch)
     result = []
     toMatch.each do |doesItMatch|
       if %w(words) == %w(toMatch).sort
         result << toMatch
-      end
-      result
+      end      
     end
+    result
+  end
