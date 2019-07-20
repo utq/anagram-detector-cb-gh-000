@@ -8,7 +8,7 @@ class Anagram
   end
   def match(toMatch)
     result = []
-    toMatch.each do |doesItMatch| 
+    toMatch.each do |doesItMatch|
       if %w(words) == %w(toMatch).sort
         result << toMatch
       end
