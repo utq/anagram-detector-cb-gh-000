@@ -9,9 +9,8 @@ class Anagram
 
   def match(toMatch)
     result = []
-    toMatch = toMatch.split()
     toMatch.each do |doesItMatch|
-      if @words.sort == doesItMatch.split('').sort
+      if @words.split('').sort == doesItMatch.split('').sort
         result << toMatch
       end
     end
