@@ -11,7 +11,7 @@ class Anagram
     result = []
     toMatch.each do |doesItMatch|
       if %w(words).contains?(%w(toMatch))
-        puts 
+        puts
         result << toMatch
       end
     end
