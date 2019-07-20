@@ -13,7 +13,7 @@ class Anagram
       puts %w(toMatch).sort
       puts %w(words).sort
       if %w(words).sort == %w(toMatch).sort
-      
+
         result << toMatch
       end
     end
