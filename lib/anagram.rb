@@ -1,12 +1,16 @@
 # Your code goes here!
 class Anagram
-  def  initialize(words)
-    :attr_accessor words
-  end
 
+  attr_accessor :words
+
+  def initialize(words)
+    @words = words
+  end
   def match(toMatch)
+    result = []
     toMatch.each |doesItMatch| do
       if %w(words) == %w(toMatch).sort
-        return toMatch
+        result << toMatch
       end
-    end 
+      result
+    end
